@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayoutPL"
+    android:background="@color/white"
+    tools:context="Fragments.ProductList">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="end|bottom"
+        app:fabSize="normal"
+        android:clickable="true"
+        android:src="@drawable/ic_add_white_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/upperPart"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@color/itemName">
+
+            <ImageView
+                android:id="@+id/imageViewPL"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:background="@color/white"
+                android:src="@drawable/emptystate_homeview2x" />
+
+            <TextView
+                android:id="@+id/textViewPL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="Company"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottomPart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_product_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:id="@+id/emptylayoutPL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/textViewEmptyPL"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="90dp"
+                    android:text="You currently do not have any products listed."
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

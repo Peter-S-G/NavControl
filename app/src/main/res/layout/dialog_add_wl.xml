@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textCapSentences"
+        android:layout_weight="0.5"
+        android:hint="Enter Company Name" />
+
+
+    <EditText
+        android:id="@+id/stockName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textCapSentences"
+        android:layout_weight="0.5"
+        android:hint="Enter Stock Name" />
+
+
+    <EditText
+        android:id="@+id/imageURLWL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textCapSentences"
+        android:layout_weight="0.5"
+        android:hint="Enter Image URL" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_okWL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btn_cancelWL"
+            android:layout_width="wrap_content"
+            android:text="Cancel"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+
+</LinearLayout>
